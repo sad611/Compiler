@@ -2,7 +2,7 @@
 
 ### 1. Compilar o Compilador
 ```bash
-g++ -std=c++17 -Wall main.cpp lexer.cpp parser.cpp ast.cpp visitor.cpp -o compiler
+g++ -std=c++17 -o compilador *.cpp
 ```
 
 ### 2. Compilar um Programa

@@ -1,0 +1,25 @@
+fun fibonacci(n) {
+    if (n <= 1) {
+        return n;
+    } else {
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+}
+
+fun processar(a, b, c) {
+    let x = a * 2;
+    let y = b * 3;
+    let z = c * 4;
+    let temp1 = x + y;
+    let temp2 = z - temp1;
+    let resultado = temp2 * 2;
+    return resultado;
+}
+
+let num = 0;
+
+main() {
+    num = fibonacci(6);
+    num = processar(num, 5, 10);
+    return num;
+}

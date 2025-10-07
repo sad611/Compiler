@@ -1,0 +1,14 @@
+fun fatorial(n) {
+    if (n <= 1) {
+        return 1;
+    } else {
+        return n * fatorial(n - 1);
+    }
+}
+
+let resultado = 0;
+
+main() {
+    resultado = fatorial(1);
+    return resultado;
+}

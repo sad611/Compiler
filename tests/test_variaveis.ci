@@ -1,0 +1,23 @@
+fun obterConstante() {
+    return 42;
+}
+
+fun calcularComplexo(x, y) {
+    let temp1 = x * 2;
+    let temp2 = y * 3;
+    let resultado = temp1 + temp2;
+    return resultado;
+}
+
+fun simples(a) {
+    return a + 10;
+}
+
+let valor = 0;
+
+main() {
+    valor = obterConstante();
+    valor = calcularComplexo(valor, 5);
+    valor = simples(valor);
+    return valor;
+}

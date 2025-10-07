@@ -1,0 +1,22 @@
+fun testarLogicos(a, b, c) {
+    let resultado1 = a && b;
+    let resultado2 = b || c;
+    let resultado3 = !a;
+    return resultado1 + resultado2 + resultado3;
+}
+
+fun testarComparacoes(x, y) {
+    let maior = x > y;
+    let menor = x < y;
+    let igual = x == y;
+    let diferente = x != y;
+    return maior + menor + igual + diferente;
+}
+
+let teste = 0;
+
+main() {
+    teste = testarLogicos(1, 0, 1);
+    teste = teste + testarComparacoes(5, 3);
+    return teste;
+}

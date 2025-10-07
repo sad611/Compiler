@@ -1,0 +1,30 @@
+fun testarBooleanos() {
+    let verdadeiro = true;
+    let falso = false;
+    
+    let resultado1 = verdadeiro && falso;
+    let resultado2 = verdadeiro || falso;
+    let resultado3 = !verdadeiro;
+    let resultado4 = !falso;
+    
+    return resultado1 + resultado2 + resultado3 + resultado4;
+}
+
+fun compararBooleanos(a, b) {
+    let igual = a == b;
+    let diferente = a != b;
+    return igual + diferente;
+}
+
+let x = false;
+let y = true;
+
+main() {
+    x = true;
+    y = false;
+    
+    let teste1 = testarBooleanos();
+    let teste2 = compararBooleanos(x, y);
+    
+    return teste1 + teste2;
+}
